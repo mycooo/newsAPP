@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeedBacKActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/bt_feedback_back"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户反馈 "
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/bt_feedback_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:textSize="15sp"
+            android:background="@drawable/fasong"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题和意见"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_feedback_rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="请提供详细的问题描述以及意见以便我们提供更好的帮助。"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_feedback_lx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="选填，你可填写手机号码或者邮箱以便我们联系你。"
+        android:textSize="14sp"/>
+</LinearLayout>

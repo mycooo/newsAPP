@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:title="新闻">
+            <menu>
+                <item
+                    android:id="@+id/nav_xinwen"
+                    android:title="新闻一览"
+                    android:icon="@drawable/xinwen"></item>
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="社区">
+            <menu>
+                <item
+                    android:id="@+id/nav_shequ"
+                    android:title="社区"
+                    android:icon="@drawable/shequ"></item>
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="@string/drawer_title_more">
+            <menu>
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/guanyu"
+                    android:title="@string/drawer_about">
+                </item>
+                <item
+                    android:id="@+id/nav_yejian"
+                    android:icon="@drawable/yejian"
+                    android:title="@string/drawer_yejian">
+                </item>
+                <item android:id="@+id/nav_setting"
+                    android:title="设置"
+                    android:icon="@drawable/ic_settings_black_24dp">
+                </item>
+                <item
+                    android:id="@+id/nav_back"
+                    android:icon="@drawable/tuichu"
+                    android:title="@string/drawer_back">
+                </item>
+            </menu>
+        </item>
+
+    </group>
+</menu>

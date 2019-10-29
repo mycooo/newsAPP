@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CollectionActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/collection_back"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_keyboard_backspace_black_24dp"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的收藏"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/white"
+        android:overScrollMode="never"
+        android:dividerHeight="1dp">>
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
